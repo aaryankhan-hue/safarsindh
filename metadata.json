@@ -1,0 +1,10 @@
+{
+  "name": "SafarSindh - Ride Hailing",
+  "description": "Production-ready inDrive & Yango style ride-hailing app with fare negotiation for Naukot, Mithi, and Mirpurkhas in Sindh, Pakistan.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

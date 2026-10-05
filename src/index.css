@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Mobile accessibility & optimization */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent auto-zoom on iOS when focusing inputs */
+@media (max-width: 768px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Hide scrollbars for clean horizontal swipeable chip carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe area insets support */
+.safe-top {
+  padding-top: max(0.5rem, env(safe-area-inset-top));
+}
+.safe-bottom {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
